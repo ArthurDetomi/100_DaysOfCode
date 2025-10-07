@@ -1,5 +1,6 @@
 from hangman_art import HANGMANPICS
 from hangman_words import words
+from logo import logo
 
 import random
 
@@ -23,6 +24,8 @@ is_game_over = False
 count_errors = 0
 
 max_errors = len(HANGMANPICS)
+
+print(logo)
 
 while not is_game_over:
     print(f"****************** {max_errors - count_errors - 1} LIVES LEFT **************************")
